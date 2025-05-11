@@ -90,7 +90,7 @@
     //         salary: 1000
     //     },
     // ]
-
+//_________________________________________________________ vazifa1__________________________________
     // 1
 
     // function getSalaryData(users) {
@@ -166,7 +166,7 @@
 //   findEmployeeById(users, 4);
 
 
-// vazifa3
+// _________________________________________________vazifa3_________________________________________________________
 // 1."Apple" mavjudligi
 
 // let fruits = ['Apple', 'Banana', 'Orange'];
@@ -201,9 +201,103 @@
 
 // 5
 
-const arr1 = [7, 8, 9];
-const arr2 = [6, 5, 4];
-const arr3 = [3, 2, 1];
+// const arr1 = [7, 8, 9];
+// const arr2 = [6, 5, 4];
+// const arr3 = [3, 2, 1];
 
-const merged = [...arr1, ...arr2, ...arr3].sort((a, b) => a - b);
-console.log(merged);
+// const merged = [...arr1, ...arr2, ...arr3].sort((a, b) => a - b);
+// console.log(merged);
+
+
+
+
+
+//_____________________________________ vazifa 2________________________________________
+// 1
+
+// let arr1 = [55, 3, 2, 11, 3, 4, 6, 7, 12];
+// arr1.sort((a, b) => a - b);
+// console.log(arr1);
+
+// 2
+// let arr2 = [1, 6, 9, 5, 8, 10, 15];
+// let sum = arr2.slice(2, 6).reduce((a, b) => a + b, 0);
+// console.log(sum);
+
+
+// 3
+// let arr = [2, 4, 5, 6, 6, 3, 2, 1];
+// let item = arr.filter((item, index) => arr.indexOf(item) === index);
+// console.log(itam); 
+
+// 4
+// let arr = [2, 4, 5, 6, 6, 3, 2, 1];
+// let max = Math.max(...arr);
+// let min = Math.min(...arr);
+// console.log({ max, min });
+
+
+// 6
+// let arr = [1, 2, 3, 4, 5];
+// arr.reverse();
+// console.log(arr);
+
+// 7
+// let arr = [5, 4, 36, 7, 8, 3, 2, 9, 6, 1];
+// let odd = arr.filter(a => a % 2 !== 0);
+// console.log(odd);
+
+// 8
+// let arr = [2, 3, 4, 5, 7];
+// let oddInd = arr.filter((_, a) => a % 2 !== 0);
+// console.log(oddInd);
+
+
+// 9
+// let arr = [5, 1, 7, 4, 3, 8];
+// let maxOddInd = Math.max(...arr.filter((_, a) => a % 2 !== 0));
+// console.log(maxOddInd);
+
+
+// 10
+// let arr = [2, 1, 3, 8, 4];
+// let minIdx = arr.indexOf(Math.min(...arr));
+// let maxIdx = arr.indexOf(Math.max(...arr));
+// let [start, end] = [Math.min(minIdx, maxIdx), Math.max(minIdx, maxIdx)];
+// for (let a = start + 1; a < end; a++) arr[a] = 0;
+// console.log(arr); 
+
+// 11
+// function oddArray(n) {
+//     return Array.from({ length: n }, (_, a) => a + 1).filter(b => b % 2 !== 0);
+//   }
+//   console.log(oddArray(100));
+  
+// 12
+
+// let arr = [22, 3, 5, 6, 3, 2, 3];
+// let reversed = [];
+// for (let a = arr.length - 1; a >= 0; a--) {
+//   reversed.push(arr[a]);
+// }
+// console.log(reversed);
+
+
+// 13
+
+// let arr = [3, 5, 6, 3, 2, 3];
+// let obj = [];
+
+// arr.forEach(item => {
+//   if (!obj.includes(item)) {
+//     obj.push(item);
+//   }
+// });
+
+// console.log(obj);
+
+
+// 14
+let arr = [5, 6, 3, 2, 3];
+let evenIndMin = Math.min(...arr.filter((_, a) => a % 2 === 0));
+console.log(evenIndMin);
